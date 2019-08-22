@@ -15,6 +15,7 @@ var a = air.Default
 
 func main() {
 	a.DebugMode = true
+	a.Address = ":80"
 	a.GET("/", index)
 	a.GET("/identicons/:Name", identicon)
 	a.Serve()

@@ -2,7 +2,7 @@
 github.com/BurntSushi/toml
 # github.com/VictoriaMetrics/fastcache v1.5.1
 github.com/VictoriaMetrics/fastcache
-# github.com/aofei/air v0.12.2
+# github.com/aofei/air v0.12.4
 github.com/aofei/air
 # github.com/aofei/cameron v1.1.2
 github.com/aofei/cameron
@@ -12,7 +12,7 @@ github.com/aofei/mimesniffer
 github.com/cespare/xxhash/v2
 # github.com/fsnotify/fsnotify v1.4.7
 github.com/fsnotify/fsnotify
-# github.com/golang/protobuf v1.3.1
+# github.com/golang/protobuf v1.3.2
 github.com/golang/protobuf/proto
 # github.com/golang/snappy v0.0.1
 github.com/golang/snappy
@@ -20,7 +20,7 @@ github.com/golang/snappy
 github.com/gorilla/websocket
 # github.com/mitchellh/mapstructure v1.1.2
 github.com/mitchellh/mapstructure
-# github.com/tdewolff/minify/v2 v2.5.0
+# github.com/tdewolff/minify/v2 v2.5.1
 github.com/tdewolff/minify/v2
 github.com/tdewolff/minify/v2/css
 github.com/tdewolff/minify/v2/html
@@ -28,7 +28,7 @@ github.com/tdewolff/minify/v2/js
 github.com/tdewolff/minify/v2/json
 github.com/tdewolff/minify/v2/svg
 github.com/tdewolff/minify/v2/xml
-# github.com/tdewolff/parse/v2 v2.3.7
+# github.com/tdewolff/parse/v2 v2.3.8
 github.com/tdewolff/parse/v2
 github.com/tdewolff/parse/v2/buffer
 github.com/tdewolff/parse/v2/strconv
@@ -41,10 +41,10 @@ github.com/tdewolff/parse/v2/xml
 # github.com/vmihailenco/msgpack v4.0.4+incompatible
 github.com/vmihailenco/msgpack
 github.com/vmihailenco/msgpack/codes
-# golang.org/x/crypto v0.0.0-20190618222545-ea8f1a30c443
+# golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
 golang.org/x/crypto/acme
 golang.org/x/crypto/acme/autocert
-# golang.org/x/net v0.0.0-20190619014844-b5b0513f8c1b
+# golang.org/x/net v0.0.0-20190724013045-ca1201d0de80
 golang.org/x/net/html
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
@@ -53,7 +53,7 @@ golang.org/x/net/idna
 golang.org/x/net/html/atom
 golang.org/x/net/http2/hpack
 golang.org/x/net/context
-# golang.org/x/sys v0.0.0-20190618155005-516e3c20635f
+# golang.org/x/sys v0.0.0-20190804053845-51ab0e2deafa
 golang.org/x/sys/unix
 # golang.org/x/text v0.3.2
 golang.org/x/text/language
