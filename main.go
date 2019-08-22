@@ -6,6 +6,9 @@ import (
 
 	"github.com/aofei/air"
 	"github.com/aofei/cameron"
+
+	"encoding/base64"
+	"os"
 )
 
 var a = air.Default
@@ -17,7 +20,30 @@ func main() {
 	a.Serve()
 }
 
+func getAvatarByHostname() (string, string) {
+	buf := bytes.Buffer{}
+	hostname, _ := os.Hostname()
+	jpeg.Encode(
+		&buf,
+		cameron.Identicon(
+			[]byte(hostname),
+			600,
+			60,
+		),
+		&jpeg.Options{
+			Quality: 100,
+		},
+	)
+
+	base64Avatar := base64.StdEncoding.EncodeToString(buf.Bytes())
+
+	return hostname, base64Avatar
+}
+
 func index(req *air.Request, res *air.Response) error {
+
+	hostname, base64Avatar := getAvatarByHostname()
+
 	return res.WriteHTML(`
 <!DOCTYPE html>
 <html>
@@ -28,7 +54,10 @@ func index(req *air.Request, res *air.Response) error {
 
   <body>
     <h1>Cameron - An avatar generator for Go.</h1>
-
+	<div>
+  		<h2>` + hostname + `</h2>
+  		<img src="data:image/png;base64, ` + base64Avatar + `" width="300" alt="Server Avatar" />
+	</div>
     <h2>Identicons</h2>
     <ul>
       <li><a href="/identicons/Robb Stark">Robb Stark's identicon</a></li>
