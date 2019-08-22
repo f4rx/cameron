@@ -6,4 +6,5 @@
 *.swp
 
 # Bin
-./cameron
+cameron
+!vendor/github.com/aofei/cameron/
